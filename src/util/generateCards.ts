@@ -1,6 +1,6 @@
-export const generateCards = (len: number): number[] => {
+export const generateCards = (len: number): string[] => {
   const arr = [...Array((len / 2) | 0).keys(), ...Array((len / 2) | 0).keys()];
-  return shuffleArr(arr);
+  return shuffleArr(arr).map((v) => String(v));
 };
 
 const shuffleArr = (arr: any[]): any[] =>

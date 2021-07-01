@@ -1,7 +1,7 @@
-import { VFC, useState } from 'react';
+import { VFC } from 'react';
 
 type Props = {
-  value: number;
+  value: string;
 };
 
 export const Card: VFC<Props> = (props) => {
