@@ -27,6 +27,7 @@ export const Game: VFC = () => {
 
       // 1つ目と2つ目の値が同じ時
       if (cardsValue[clickedIndex] === cardsValue[i]) {
+        // マッチしている状態にする
         className[i] = 'card-match';
         className[clickedIndex] = 'card-match';
         setCardState({
