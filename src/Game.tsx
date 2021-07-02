@@ -7,10 +7,12 @@ export const Game: VFC = () => {
 
   const handleClick = (i: number): void => {
     const { className, clickedIndex, cardsValue, isClickable } = cardState;
+
+    // クリック禁止状態かすでにマッチしている場合は何もしない
     if (isClickable === false || className[i] === 'card-match') return;
 
+    // 1つ目のカードを選択した時
     if (clickedIndex === null) {
-      // 1つ目のカードを選択した時
       className[i] = 'card-front'; // カードを裏返す
       setCardState({
         ...cardState,
