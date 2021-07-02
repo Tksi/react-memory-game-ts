@@ -58,15 +58,15 @@ export const Game: VFC = () => {
             className,
             isClickable: true,
           });
-        }, 1000);
+        }, 750);
       }
     }
 
     //　クリア時、カードを2つ増やして初期化
     if (className.every((v) => v === 'card-match')) {
       setTimeout(() => {
-        setCardState(initState(className.length + 2));
-      }, 1000);
+        setCardState(initState(className.length * 2));
+      }, 750);
     }
   };
 
