@@ -6,13 +6,17 @@
   box-sizing: border-box;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   background: linear-gradient(rgb(119, 119, 247), rgb(255, 192, 203));
-  height: 100vh;
+  height: 100%;
 }
 
 #App {
-  height: 95vh;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,8 +67,10 @@ main > div {
   border: 10px solid #ececec;
 }
 
-.card-back:hover {
-  border: 10px solid rgb(255, 255, 255);
+@media (hover: hover) {
+  .card-back:hover {
+    border: 10px solid rgb(255, 255, 255);
+  }
 }
 
 .card-match {
