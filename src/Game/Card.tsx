@@ -1,9 +1,15 @@
 import { VFC } from 'react';
 
 type Props = {
-  value: string;
+  value: number;
+  className: string;
+  onClick: Function;
 };
 
 export const Card: VFC<Props> = (props) => {
-  return <div>{props.value}</div>;
+  return (
+    <div className={props.className} onClick={() => props.onClick()}>
+      {props.value}
+    </div>
+  );
 };

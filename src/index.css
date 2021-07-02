@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgb(119, 119, 247), rgb(255, 192, 203));
+  height: 100vh;
+}
+
+#App {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  letter-spacing: 0.25rem;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: black 1px 1px, black 2px 2px, black 3px 3px, black 4px 4px,
+    black 5px 5px, black 6px 6px, black 7px 7px, black 8px 8px, black 9px 9px,
+    black 10px 10px;
+}
+
+main {
+  margin: 25px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main > div {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 4.25rem;
+  margin: 0.1rem;
+  border-radius: 30%;
+  text-align: center;
+  user-select: none;
+}
+
+.card-front {
+  background-color: #ffffff;
+  color: black;
+  border: 10px solid white;
+}
+
+.card-back {
+  background-color: #ececec;
+  color: transparent;
+  border: 10px solid #ececec;
+}
+
+.card-back:hover {
+  border: 10px solid rgb(255, 255, 255);
+}
+
+.card-match {
+  border: 10px solid #3bdf5f;
+  background-color: white;
+}
+
+.card-unmatch {
+  border: 10px solid #fd5944;
+  background-color: white;
+}
+
+.score {
+  font-size: 3rem;
+  color: white;
+}
