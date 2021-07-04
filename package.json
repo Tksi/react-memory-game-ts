@@ -22,8 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write '{,!(node_modules)/**/}*.{js,ts,tsx}'",
-    "lint": "eslint . --ext .js,.ts,.tsx --ignore-pattern node_modules/"
+    "format": "prettier --ignore-unknown --write '{,!(node_modules)/**/}*'",
+    "lint": "eslint . --ignore-pattern node_modules/"
   },
   "eslintConfig": {
     "extends": [
