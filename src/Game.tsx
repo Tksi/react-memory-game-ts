@@ -62,7 +62,7 @@ export const Game: VFC = () => {
       }
     }
 
-    // クリア時、カードを2つ増やして初期化
+    // クリア時、カード数を2倍にして初期化
     if (className.every((v) => v === 'card-match')) {
       setTimeout(() => {
         setCardState(initState(className.length * 2));
