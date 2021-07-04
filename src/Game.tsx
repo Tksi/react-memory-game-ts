@@ -62,7 +62,7 @@ export const Game: VFC = () => {
       }
     }
 
-    //　クリア時、カードを2つ増やして初期化
+    // クリア時、カードを2つ増やして初期化
     if (className.every((v) => v === 'card-match')) {
       setTimeout(() => {
         setCardState(initState(className.length * 2));
@@ -72,16 +72,14 @@ export const Game: VFC = () => {
 
   return (
     <>
-      {cardState.cardsValue.map((cardValue, i) => {
-        return (
-          <Card
-            key={i}
-            value={cardValue}
-            onClick={() => handleClick(i)}
-            className={cardState.className[i]}
-          />
-        );
-      })}
+      {cardState.cardsValue.map((cardValue, i) => (
+        <Card
+          key={i}
+          value={cardValue}
+          onClick={() => handleClick(i)}
+          className={cardState.className[i]}
+        />
+      ))}
     </>
   );
 };

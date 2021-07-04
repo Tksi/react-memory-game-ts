@@ -3,7 +3,7 @@ import { VFC } from 'react';
 type Props = {
   value: number;
   className: string;
-  onClick: Function;
+  onClick: () => void;
 };
 
 export const Card: VFC<Props> = (props) => {

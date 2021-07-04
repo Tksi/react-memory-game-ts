@@ -19,7 +19,7 @@ const generateCards = (len: number): number[] => {
   return shuffleArr(arr);
 };
 
-const shuffleArr = (arr: any[]): any[] =>
+const shuffleArr = (arr: number[]): number[] =>
   arr
     .map((v) => [Math.random(), v])
     .sort(([a], [b]) => a - b)
