@@ -22,9 +22,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/prefer-stateless-function': ['error'],
-    '@typescript-eslint/no-unused-vars': ['error'],
     camelcase: 'error',
-    'no-var': 'error',
     'no-console': [
       'warn',
       {
